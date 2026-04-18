@@ -44,6 +44,12 @@ html {
     background-color: var(--bg-color);
 }
 
+.home+content h3:nth-of-type(2) {
+    font-aize: 3.5rem;
+    width : 500px
+}
+
+
 body {
     color: var(--text-color);
     background-color: var(--bg-color);
