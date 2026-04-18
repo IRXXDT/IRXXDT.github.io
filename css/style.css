@@ -77,6 +77,25 @@ ul {
     transition: color 0.3s ease;
 }
 
+#language-selector {
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem 0.6rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#language-selector:hover,
+#language-selector:focus {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    outline: none;
+}
+
 .navbar a {
     color: var(--text-color);
     font-size: 1.6rem;
