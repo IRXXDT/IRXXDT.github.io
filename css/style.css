@@ -305,6 +305,7 @@ ul {
 .skil-box {
     flex: 1 1 300px;
     /* Flexbox for responsive design */
+    min-height: 350px;
     width: 30%;
     background-color: var(--second-bg-color);
     padding: 2rem;
