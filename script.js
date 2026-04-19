@@ -88,7 +88,7 @@ const translations = {
     aboutHeading: "About",
     aboutSpan: "Me",
     aboutDescription:
-      "Hello, my name is Ali Raditya. I am a student at the Telekomunikasi Telesandi Bekasi Vocational High School, majoring in Informatics Engineering. I am passionate about web development and design, and I have experience in creating various projects that showcase my skills. I am always eager to learn new technologies and improve my abilities in the field of software development.",
+      "Hello, my name is Ali Raditya Al-Haq. I am a student at the Telekomunikasi Telesandi Bekasi Vocational High School, majoring in Informatics Engineering. I am passionate about web development and design, and I have experience in creating various projects that showcase my skills. I am always eager to learn new technologies and improve my abilities in the field of software development.",
     mySkills: "My",
     skillsSpan: " Skills",
     webDevelopment: "Web Development",
@@ -138,7 +138,7 @@ const translations = {
     aboutHeading: "Tentang",
     aboutSpan: "Saya",
     aboutDescription:
-      "Halo, nama saya Ali Raditya. Saya siswa SMK Telekomunikasi Telesandi Bekasi, jurusan Teknik Informatika. Saya memiliki minat yang besar di bidang pengembangan dan desain web, dan berpengalaman dalam mengerjakan berbagai proyek yang menunjukkan keahlian saya. Saya selalu bersemangat untuk mempelajari teknologi baru dan meningkatkan kemampuan saya di bidang pengembangan perangkat lunak.",
+      "Halo, nama saya Ali Raditya Al-Haq. Saya siswa SMK Telekomunikasi Telesandi Bekasi, jurusan Teknik Informatika. Saya memiliki minat yang besar di bidang pengembangan dan desain web, dan berpengalaman dalam mengerjakan berbagai proyek yang menunjukkan keahlian saya. Saya selalu bersemangat untuk mempelajari teknologi baru dan meningkatkan kemampuan saya di bidang pengembangan perangkat lunak.",
     mySkills: "Keahlian",
     skillsSpan: "",
     webDevelopment: "Web Programmer",
