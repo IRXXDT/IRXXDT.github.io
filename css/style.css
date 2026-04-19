@@ -249,7 +249,7 @@ ul {
 
 .about-img img {
     width: 35vw;
-    height: 35vw;
+    height: auto;
     max-width: 600px;
     border-radius: 10px;
 }
