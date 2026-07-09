@@ -157,13 +157,13 @@ const translations = {
     portfolioSpan: "",
     project1Title: "GO!!ZAKAT",
     project1Desc:
-      "",
+      "Aplikasi zakat yang saya buat menggunakan bahasa pemrograman PHP untuk mempermudah proses transaksi zakat emas dan penghasilan",
     project2Title: "Desain Spotify",
     project2Desc:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eaque exercitationem, officia aspernatur cupiditate tempore, unde animi recusandae fugiat ipsa inventore debitis excepturi deserunt eius dignissimos quis, facere a laboriosam.",
+      "Desain Spotify adalah proyek kreatif di mana saya membayangkan kembali antarmuka pengguna dari platform streaming musik populer. Desain ini fokus pada peningkatan pengalaman pengguna dengan tata letak yang minimalis dan intuitif, sambil mempertahankan fungsi inti yang disukai pengguna tentang Spotify.",
     project3Title: "Youtube Channel",
     project3Desc:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eaque exercitationem, officia aspernatur cupiditate tempore, unde animi recusandae fugiat ipsa inventore debitis excepturi deserunt eius dignissimos quis, facere a laboriosam.",
+      "Saya telah mengembangkan karir di channel youtube sejak akhir tahun 2020 dan telah memiliki total puluhan ribu penonton. channel ini menampilkan kompilasi dari lagu kebangsaan, lagu wajib nasional, video daftar pemimpin, DLL.",
     contactMe: "Kontak",
     contactSpan: "",
     sendMessage: "Kirim Pesan",
