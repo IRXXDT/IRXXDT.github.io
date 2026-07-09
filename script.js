@@ -125,7 +125,7 @@ const translations = {
     messagePlaceholder: "Your Message",
     copyright: "© 2025 Ali Raditya | All Rights Reserved.",
   },
-  id: {
+ id: {
     home: "BERANDA",
     about: "Tentang Saya",
     skills: "Keahlian",
@@ -134,12 +134,13 @@ const translations = {
     hello: "Halo, Saya",
     name: "Ali Raditya",
     andIm: "Dan Saya adalah",
+    text_multiple: ["Web Developer", "Desainer UI/UX", "Siswa", "Youtuber"],
     description: "Ini adalah website portfolio pertama Saya.",
     downloadCV: "Unduh CV",
     aboutHeading: "Tentang",
     aboutSpan: "Saya",
     aboutDescription:
-      "Halo, nama saya Ali Raditya Al-Haq. Saya siswa SMK Telekomunikasi Telesandi Bekasi, jurusan Teknik Informatika. Saya memiliki minat yang besar di bidang pengembangan dan desain web, dan berpengalaman dalam mengerjakan berbagai proyek yang menunjukkan keahlian saya. Saya selalu bersemangat untuk mempelajari teknologi baru dan meningkatkan kemampuan saya di bidang pengembangan perangkat lunak.",
+      "Halo, nama saya Ali Raditya. Saya siswa SMK Telekomunikasi Telesandi Bekasi, jurusan Teknik Informatika. Saya memiliki minat yang besar di bidang pengembangan dan desain web, dan berpengalaman dalam mengerjakan berbagai proyek yang menunjukkan keahlian saya. Saya selalu bersemangat untuk mempelajari teknologi baru dan meningkatkan kemampuan saya di bidang pengembangan perangkat lunak.",
     mySkills: "Keahlian",
     skillsSpan: "",
     webDevelopment: "Web Programmer",
@@ -159,12 +160,12 @@ const translations = {
     project1Title: "GO!!ZAKAT",
     project1Desc:
       "Aplikasi zakat yang saya buat menggunakan bahasa pemrograman PHP untuk mempermudah proses transaksi zakat emas dan penghasilan",
-    project2Title: "Desain Spotify",
+    project2Title: "Website Cakralogy",
     project2Desc:
       "Website Cakralogy adalah proyek kelompok yang dikembangkan untuk memberikan wawasan yang lebih luas terkait dunia IT.",
-    project3Title: "Youtube Channel",
+    project3Title: "Youtube Channel", 
     project3Desc:
-      "Saya telah mengembangkan karir di channel youtube sejak akhir tahun 2020 dan telah memiliki total puluhan ribu penonton. channel ini menampilkan kompilasi dari lagu kebangsaan, lagu wajib nasional, video daftar pemimpin, DLL.",
+      "Saya telah mengembangkan karir di channel youtube sejak akhir tahun 2020 dan telah memiliki total puluhan ribu penonton. channel ini menampilkan kompilasi dari lagu kebangsaan, lagu wajib nasional, DLL.",
     contactMe: "Kontak",
     contactSpan: "",
     sendMessage: "Kirim Pesan",
