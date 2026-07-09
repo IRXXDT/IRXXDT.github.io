@@ -1,74 +1,113 @@
 // == scroll section active link == //
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
-let header = document.querySelector('header');
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+let sections = document.querySelectorAll("section");
+let navLinks = document.querySelectorAll("header nav a");
+let header = document.querySelector("header");
+let menuIcon = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
 
 window.onscroll = () => {
-    // Aktifkan link nav saat scroll
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+  // Aktifkan link nav saat scroll
+  sections.forEach((sec) => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute("id");
 
-        if (id && top >= offset && top < offset + height) {
-            navLinks.forEach(link => link.classList.remove('active'));
-            let current = document.querySelector(`header nav a[href*="#${id}"]`);
-            if (current) current.classList.add('active');
-        }
-    });
+    if (id && top >= offset && top < offset + height) {
+      navLinks.forEach((link) => link.classList.remove("active"));
+      let current = document.querySelector(`header nav a[href*="#${id}"]`);
+      if (current) current.classList.add("active");
+    }
+  });
 
-    // Sticky header
-    header.classList.toggle('sticky', window.scrollY > 100);
+  // Sticky header
+  header.classList.toggle("sticky", window.scrollY > 100);
 };
 
 // === toggle icon navbar === //
 if (menuIcon && navbar) {
-    menuIcon.onclick = () => {
-        menuIcon.classList.toggle('bx-x');
-        navbar.classList.toggle('active');
-    };
+  menuIcon.onclick = () => {
+    menuIcon.classList.toggle("bx-x");
+    navbar.classList.toggle("active");
+  };
 }
 
 // === Tutup menu saat klik link === //
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        menuIcon.classList.remove('bx-x');
-        navbar.classList.remove('active');
-    });
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    menuIcon.classList.remove("bx-x");
+    navbar.classList.remove("active");
+  });
 });
 
 // Tutup navbar saat klik di luar navbar
-document.addEventListener('click', (e) => {
-    if (!navbar.contains(e.target) && !menuIcon.contains(e.target)) {
-        menuIcon.classList.remove('bx-x');
-        navbar.classList.remove('active');
-    }
+document.addEventListener("click", (e) => {
+  if (!navbar.contains(e.target) && !menuIcon.contains(e.target)) {
+    menuIcon.classList.remove("bx-x");
+    navbar.classList.remove("active");
+  }
 });
 
 // === typed js animation === //
-const typed = new Typed('.multiple-text', {
-    strings: ['Web Developer', 'UI/UX Designer', 'Student','Youtuber'],
+let typedInstance = null;
+
+// Initialize Typed
+function initTyped(lang) {
+  if (typedInstance) {
+    typedInstance.destroy();
+  }
+  
+  const multipleText = document.querySelector(".multiple-text");
+  if (multipleText) {
+    multipleText.textContent = "";
+  }
+  
+  typedInstance = new Typed(".multiple-text", {
+    strings: translations[lang].text_multiple,
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
-    loop: true
-});
+    loop: true,
+  });
+}
 
 // === scroll reveal animation === //
 ScrollReveal({
-    reset: true,
-    distance: '80px',
-    duration: 2000,
-    delay: 200
+  reset: true,
+  distance: "80px",
+  duration: 2000,
+  delay: 200,
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .skills-container, .portfolio-box, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
+ScrollReveal().reveal(
+  ".home-img, .skills-container, .portfolio-box, .contact form",
+  { origin: "bottom" }
+);
+ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
+ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
+
+// === Smooth scroll sections === //
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarHeight = 110;
+
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    const href = link.getAttribute("href");
+    const target = document.querySelector(href);
+
+    if (target) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetPosition =
+          target.getBoundingClientRect().top + window.scrollY - navbarHeight;
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
+      });
+    }
+  });
+});
 
 // === Language switcher === //
 const languageSelector = document.getElementById("language-selector");
@@ -89,7 +128,7 @@ const translations = {
     aboutHeading: "About",
     aboutSpan: "Me",
     aboutDescription:
-      "Hello, my name is Ali Raditya. I am a student at the Telekomunikasi Telesandi Bekasi Vocational High School, majoring in Informatics Engineering. I am passionate about web development and design, and I have experience in creating various projects that showcase my skills. I am always eager to learn new technologies and improve my abilities in the field of software development.",
+      "Hello, my name is Ali Raditya. I am a student at the Telekomunikasi Telesandi Bekasi Vocational High School, majoring in Software Engineering and now I'm new student at Institut Teknologi Sepuluh Nopember in the same major. I am passionate about web development and design, and I have experience in creating various projects that showcase my skills. I am always eager to learn new technologies and improve my abilities in the field of software development.",
     mySkills: "My",
     skillsSpan: " Skills",
     webDevelopment: "Web Development",
@@ -125,7 +164,7 @@ const translations = {
     messagePlaceholder: "Your Message",
     copyright: "© 2025 Ali Raditya | All Rights Reserved.",
   },
- id: {
+  id: {
     home: "BERANDA",
     about: "Tentang Saya",
     skills: "Keahlian",
@@ -140,7 +179,7 @@ const translations = {
     aboutHeading: "Tentang",
     aboutSpan: "Saya",
     aboutDescription:
-      "Halo, nama saya Ali Raditya. Saya siswa SMK Telekomunikasi Telesandi Bekasi, jurusan Teknik Informatika. Saya memiliki minat yang besar di bidang pengembangan dan desain web, dan berpengalaman dalam mengerjakan berbagai proyek yang menunjukkan keahlian saya. Saya selalu bersemangat untuk mempelajari teknologi baru dan meningkatkan kemampuan saya di bidang pengembangan perangkat lunak.",
+      "Halo, nama saya Ali Raditya. Saya alumni siswa SMK Telekomunikasi Telesandi Bekasi, jurusan Rekayasa Perangkat Lunak dan sekarang saya mahasiswa baru di Institut Teknologi Sepuluh Nopember di jurusan yang sama. Saya memiliki minat yang besar di bidang pengembangan dan desain web, dan berpengalaman dalam mengerjakan berbagai proyek yang menunjukkan keahlian saya. Saya selalu bersemangat untuk mempelajari teknologi baru dan meningkatkan kemampuan saya di bidang pengembangan perangkat lunak.",
     mySkills: "Keahlian",
     skillsSpan: "",
     webDevelopment: "Web Programmer",
@@ -199,7 +238,8 @@ function updateTextContent(lang) {
   document.querySelector(
     ".home-content h3:nth-of-type(2)"
   ).childNodes[0].textContent = translations[lang].andIm + " ";
-  // The span with class multiple-text is handled by typed.js, so no change here
+  // Update typed animation for multiple-text
+  initTyped(lang);
   document.querySelector(".home-content p").textContent =
     translations[lang].description;
   document.querySelector(".btn").textContent = translations[lang].downloadCV;
@@ -312,3 +352,4 @@ languageSelector.addEventListener("change", (e) => {
 
 // Initialize with default language
 updateTextContent(languageSelector.value);
+initTyped(languageSelector.value);
