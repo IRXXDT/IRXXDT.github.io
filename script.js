@@ -83,12 +83,13 @@ const translations = {
     hello: "Hello It's Me",
     name: "Ali Raditya",
     andIm: "And I'm a",
+    text_multiple: ["Web Developer", "UI/UX Designer", "Student", "Youtuber"],
     description: "This is my first personal profile website.",
     downloadCV: "Download CV",
     aboutHeading: "About",
     aboutSpan: "Me",
     aboutDescription:
-      "Hello, my name is Ali Raditya Al-Haq. I am a student at the Telekomunikasi Telesandi Bekasi Vocational High School, majoring in Informatics Engineering. I am passionate about web development and design, and I have experience in creating various projects that showcase my skills. I am always eager to learn new technologies and improve my abilities in the field of software development.",
+      "Hello, my name is Ali Raditya. I am a student at the Telekomunikasi Telesandi Bekasi Vocational High School, majoring in Informatics Engineering. I am passionate about web development and design, and I have experience in creating various projects that showcase my skills. I am always eager to learn new technologies and improve my abilities in the field of software development.",
     mySkills: "My",
     skillsSpan: " Skills",
     webDevelopment: "Web Development",
@@ -107,13 +108,13 @@ const translations = {
     portfolioSpan: "Portfolio",
     project1Title: "GO!!ZAKAT",
     project1Desc:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eaque exercitationem, officia aspernatur cupiditate tempore, unde animi recusandae fugiat ipsa inventore debitis excepturi deserunt eius dignissimos quis, facere a laboriosam.",
-    project2Title: "Spotify Design",
+      "GO!!ZAKAT is a Zakat application that I developed using PHP. This application allows users to calculate and manage their Zakat obligations efficiently. It features a user-friendly interface and provides accurate calculations based on the latest Zakat regulations.",
+    project2Title: "Cakralogy Website",
     project2Desc:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eaque exercitationem, officia aspernatur cupiditate tempore, unde animi recusandae fugiat ipsa inventore debitis excepturi deserunt eius dignissimos quis, facere a laboriosam.",
-    project3Title: "LaravelPost",
+      "The Cakralogy website project is a collaborative effort to provide broader insights into the world of IT.",
+    project3Title: "Youtube Channel",
     project3Desc:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eaque exercitationem, officia aspernatur cupiditate tempore, unde animi recusandae fugiat ipsa inventore debitis excepturi deserunt eius dignissimos quis, facere a laboriosam.",
+      "I have been developing my YouTube channel since late 2020 and have amassed tens of thousands of views. This channel features compilations of national anthems, mandatory national songs, and more.",
     contactMe: "Contact",
     contactSpan: "Me",
     sendMessage: "Send Message",
@@ -160,7 +161,7 @@ const translations = {
       "Aplikasi zakat yang saya buat menggunakan bahasa pemrograman PHP untuk mempermudah proses transaksi zakat emas dan penghasilan",
     project2Title: "Desain Spotify",
     project2Desc:
-      "Desain Spotify adalah proyek kreatif di mana saya membayangkan kembali antarmuka pengguna dari platform streaming musik populer. Desain ini fokus pada peningkatan pengalaman pengguna dengan tata letak yang minimalis dan intuitif, sambil mempertahankan fungsi inti yang disukai pengguna tentang Spotify.",
+      "Website Cakralogy adalah proyek kelompok yang dikembangkan untuk memberikan wawasan yang lebih luas terkait dunia IT.",
     project3Title: "Youtube Channel",
     project3Desc:
       "Saya telah mengembangkan karir di channel youtube sejak akhir tahun 2020 dan telah memiliki total puluhan ribu penonton. channel ini menampilkan kompilasi dari lagu kebangsaan, lagu wajib nasional, video daftar pemimpin, DLL.",
