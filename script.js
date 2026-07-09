@@ -161,7 +161,7 @@ const translations = {
     project2Title: "Desain Spotify",
     project2Desc:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eaque exercitationem, officia aspernatur cupiditate tempore, unde animi recusandae fugiat ipsa inventore debitis excepturi deserunt eius dignissimos quis, facere a laboriosam.",
-    project3Title: "LaravelPost",
+    project3Title: "Youtube Channel",
     project3Desc:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eaque exercitationem, officia aspernatur cupiditate tempore, unde animi recusandae fugiat ipsa inventore debitis excepturi deserunt eius dignissimos quis, facere a laboriosam.",
     contactMe: "Kontak",
